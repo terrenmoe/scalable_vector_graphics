@@ -30,7 +30,7 @@ SVG integrates with standards such as the DOM and XSL.
 
 Pro-Tips:
   <li>
-    The width and height of the <svg> element refer to the whole SVG image
+    The width and height of the &#60;svg&#61; element refer to the whole SVG image
   </li>
   <li>
     SVG is XML, all elements need closed
@@ -38,7 +38,9 @@ Pro-Tips:
   <li>
     To style shapes use css
   </li>
-  <li>Use fill-rule style with evenodd|nonzero</li>
+  <li>
+    Use fill-rule style with even, odd or nonzero
+  </li>
 
 Predefined Shapes
 <table>
@@ -49,12 +51,12 @@ Predefined Shapes
   </tr>
   <tr>
     <td>Rectangle</td>
-    <td><rect></td>
+    <td> &#60;rect&#61; </td>
     <td>width height</td>
   </tr>
   <tr>
     <td> Circle </td>
-    <td> <circle> </td>
+    <td> &#60;circle&#61; </td>
     <td>
       <abbr title="center x">cx</abbr>
       <abbr title="center y">cy</abbr>
@@ -63,7 +65,7 @@ Predefined Shapes
   </tr>
   <tr>
     <td> Ellipse </td>
-    <td> <ellipse> </td>
+    <td> &#60;ellipse&#61; </td>
     <td>
       Same as Circle plus
       <abbr title="radius x">rx</abbr>
@@ -72,7 +74,7 @@ Predefined Shapes
   </tr>
   <tr>
     <td> Line </td>
-    <td> <line> </td>
+    <td> &#60;line&#61; </td>
     <td> x1, y1, x2, y2 </td>
   </tr>
   <tr>
@@ -88,12 +90,12 @@ Predefined Shapes
   </tr>
   <tr>
     <td> Polygon </td>
-    <td> <polygon> </td>
+    <td> &#60;polygon&#61; </td>
     <td></td>
   </tr>
   <tr>
     <td> Path </td>
-    <td> <path> </td>
+    <td> &#60;path&#61; </td>
     <td></td>
   </tr>
 </table>
