@@ -1,48 +1,57 @@
 # scalable_vector_graphics
 
-Any element or attribute in SVG files can be animated.
 
 SVG integrates with standards such as the DOM and XSL.
-  <h3> Advantages of SVG: </h3>
+<h3> Advantages of SVG: </h3>
 <ul>
   <li>
-    can be created and edited with any text editor
+    Can be created and edited with any editor
   </li>
   <li>
-    can be searched, indexed, scripted, and compressed
+    Can be searched, indexed, scripted, and compressed
   </li>
   <li>
-    are scalable and zoom-able
+    Are scalable and zoom-able
   </li>
   <li>
-    can be high quality printed at any resolution
+    Can be high quality printed at any resolution
   </li>
   <li>
-    don't lose quality if zoomed or resized
+    Doesn't lose quality if zoomed or resized
   </li>
   <li>
-    is an open standard
+    Is an open standard
   </li>
   <li>
-    are pure XML
+    Are pure XML
   </li>
+  <li>
+    Any element or attribute in SVG files can be animated.
+  </li>
+
 </ul>
 
-Pro-Tips:
+<h3>Pro-Tips:</h3>
   <li>
-    The width and height of the &#60;svg&#61; element refer to the whole SVG image
+    The **width** and **height** of the &#60;svg&#62; element refer to the whole SVG image
   </li>
   <li>
     SVG is XML, all elements need closed
   </li>
   <li>
-    To style shapes use css
+    To style shapes use CSS
   </li>
   <li>
-    Use fill-rule style with even, odd or nonzero
+    Use fill-rule style with:
+    * **even**,
+    * **odd** or
+    * **nonzero**
   </li>
+  * All path commands can be expressed with either *lowercase* or *uppercase* with purpose
+  * *lowercase* specifies *relative* positioning
+  * *uppercase* specifies *absolute* positioning
 
-Predefined Shapes
+<h3>Predefined Shapes</h3>
 <table>
   <tr>
     <th>Name</th>
@@ -51,51 +60,95 @@ Predefined Shapes
   </tr>
   <tr>
     <td>Rectangle</td>
-    <td> &#60;rect&#61; </td>
-    <td>width height</td>
-  </tr>
-  <tr>
-    <td> Circle </td>
-    <td> &#60;circle&#61; </td>
+    <td>&#60;rect&#62;</td>
     <td>
-      <abbr title="center x">cx</abbr>
-      <abbr title="center y">cy</abbr>
-      <abbr title="radius">r</abbr>
+      **width:** horizontal length
+      **height:** vertical length
     </td>
   </tr>
   <tr>
-    <td> Ellipse </td>
-    <td> &#60;ellipse&#61; </td>
+    <td>Circle</td>
+    <td>&#60;circle&#62;</td>
     <td>
-      Same as Circle plus
-      <abbr title="radius x">rx</abbr>
-      <abbr title="radius y">ry</abbr>
+      **cx:** center x
+      **cy:** center y
+      **r:** radius
     </td>
   </tr>
   <tr>
-    <td> Line </td>
-    <td> &#60;line&#61; </td>
-    <td> x1, y1, x2, y2 </td>
-  </tr>
-  <tr>
-    <td>
-    Polyline
-    </td>
-    <td>
-    <polyline>
-    </td>
-    <td>
-      <abbr title="A list of pairs of coordinate points">points</abbr>
+    <td>Ellipse</td>
+    <td>&#60;ellipse&#62;</td>
+    <td>Extends Circle with
+      **rx:** horizontal radius
+      **ry:** vertical radius
     </td>
   </tr>
   <tr>
-    <td> Polygon </td>
-    <td> &#60;polygon&#61; </td>
-    <td></td>
+    <td>Line</td>
+    <td>&#60;line&#62;</td>
+    <td>
+      **x1:** horizontal start position
+      **y1:** vertical start position
+      **x2:** horizontal end position
+      **y2:** vertical end position
+    </td>
   </tr>
   <tr>
-    <td> Path </td>
-    <td> &#60;path&#61; </td>
-    <td></td>
+    <td>Polyline</td>
+    <td>&#60;polyline&#62;</td>
+    <td>
+      **points:** A space separated list of x,y coordinates
+    </td>
+  </tr>
+  <tr>
+    <td>Polygon</td>
+    <td>&#60;polygon&#62;</td>
+    <td>See *Polyline*</td>
+  </tr>
+  <tr>
+    <td>Path</td>
+    <td>&#60;path&#62;</td>
+    <td>
+      **M:** moveto
+      **L:** lineto
+      **H:** horizontal lineto
+      **V:** vertical lineto
+      **C:** curveto
+      **S:** smooth curveto
+      **Q:** quadratic Bézier curve
+      **T:** smooth quadratic Bézier curveto
+      **A:** elliptical Arc
+      **Z:** closepath
+    </td>
+  </tr>
+  <tr>
+    <td>Text</td>
+    <td>&#60;text&#62;</td>
+    <td>
+      **x:** horizontal start position
+      **y:** vertical start position
+      **&#60;tspan&#60;:** a sub element for grouping lines of text
+    </td>
   </tr>
 </table>
+
+# Filters
+  * **&lt;feBlend&gt;:** filter for combining images
+  * **&lt;feColorMatrix&gt;:** filter for color transforms
+  * **&lt;feComponentTransfer&gt;:**
+  * **&lt;feComposite&gt;:**
+  * **&lt;feConvolveMatrix&gt;:**
+  * **&lt;feDiffuseLighting&gt;:**
+  * **&lt;feDisplacementMap&gt;:**
+  * **&lt;feFlood&gt;:**
+  * **&lt;feGaussianBlur&gt;:**
+  * **&lt;feImage&gt;:**
+  * **&lt;feMerge&gt;:**
+  * **&lt;feMorphology&gt;:**
+  * **&lt;feOffset&gt;:** filter for drop shadows
+  * **&lt;feSpecularLighting&gt;:**
+  * **&lt;feTile&gt;:**
+  * **&lt;feTurbulence&gt;:**
+  * **&lt;feDistantLight&gt;:** filter for lighting
+  * **&lt;fePointLight&gt;:** filter for lighting
+  * **&lt;feSpotLight&gt;:** filter for lighting
