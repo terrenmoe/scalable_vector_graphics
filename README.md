@@ -1,68 +1,99 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# scalable_vector_graphics
 
-## Available Scripts
+Any element or attribute in SVG files can be animated.
 
-In the project directory, you can run:
+SVG integrates with standards such as the DOM and XSL.
+  <h3> Advantages of SVG: </h3>
+<ul>
+  <li>
+    can be created and edited with any text editor
+  </li>
+  <li>
+    can be searched, indexed, scripted, and compressed
+  </li>
+  <li>
+    are scalable and zoom-able
+  </li>
+  <li>
+    can be high quality printed at any resolution
+  </li>
+  <li>
+    don't lose quality if zoomed or resized
+  </li>
+  <li>
+    is an open standard
+  </li>
+  <li>
+    are pure XML
+  </li>
+</ul>
 
-### `npm start`
+Pro-Tips:
+  <li>
+    The width and height of the <svg> element refer to the whole SVG image
+  </li>
+  <li>
+    SVG is XML, all elements need closed
+  </li>
+  <li>
+    To style shapes use css
+  </li>
+  <li>Use fill-rule style with evenodd|nonzero</li>
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Predefined Shapes
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Tag</th>
+    <th>Specific Attributes</th>
+  </tr>
+  <tr>
+    <td>Rectangle</td>
+    <td><rect></td>
+    <td>width height</td>
+  </tr>
+  <tr>
+    <td> Circle </td>
+    <td> <circle> </td>
+    <td>
+      <abbr title="center x">cx</abbr>
+      <abbr title="center y">cy</abbr>
+      <abbr title="radius">r</abbr>
+    </td>
+  </tr>
+  <tr>
+    <td> Ellipse </td>
+    <td> <ellipse> </td>
+    <td>
+      Same as Circle plus
+      <abbr title="radius x">rx</abbr>
+      <abbr title="radius y">ry</abbr>
+    </td>
+  </tr>
+  <tr>
+    <td> Line </td>
+    <td> <line> </td>
+    <td> x1, y1, x2, y2 </td>
+  </tr>
+  <tr>
+    <td>
+    Polyline
+    </td>
+    <td>
+    <polyline>
+    </td>
+    <td>
+      <abbr title="A list of pairs of coordinate points">points</abbr>
+    </td>
+  </tr>
+  <tr>
+    <td> Polygon </td>
+    <td> <polygon> </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td> Path </td>
+    <td> <path> </td>
+    <td></td>
+  </tr>
+</table>
