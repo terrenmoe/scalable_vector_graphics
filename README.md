@@ -1,103 +1,99 @@
-# scalable_vector_graphics
-
-
+# Scalable Vector Graphics
 SVG integrates with standards such as the DOM and XSL.
 <h3> Advantages of SVG: </h3>
 <ul>
-  <li>
-    Can be created and edited with any editor
-  </li>
-  <li>
-    Can be searched, indexed, scripted, and compressed
-  </li>
-  <li>
-    Are scalable and zoom-able
-  </li>
-  <li>
-    Can be high quality printed at any resolution
-  </li>
-  <li>
-    Doesn't lose quality if zoomed or resized
-  </li>
-  <li>
-    Is an open standard
-  </li>
-  <li>
-    Are pure XML
-  </li>
-  <li>
-    Any element or attribute in SVG files can be animated.
-  </li>
-
+  <li> Can be created and edited with any editor </li>
+  <li> Can be searched, indexed, scripted, and compressed </li>
+  <li> Are scalable and zoom-able </li>
+  <li> Can be high quality printed at any resolution </li>
+  <li> Doesn't lose quality if zoomed or resized </li>
+  <li> Is an open standard </li>
+  <li> Are pure XML </li>
+  <li> Any element or attribute can be animated. </li>
 </ul>
 
 <h3>Pro-Tips:</h3>
+<ul>
   <li>
-    The **width** and **height** of the &#60;svg&#62; element refer to the whole SVG image
+    The <code>width</code> and <code>height</code> html attributes of the &#60;svg&#62; element refer to the whole SVG image
   </li>
-  <li>
-    SVG is XML, all elements need closed
-  </li>
-  <li>
-    To style shapes use CSS
-  </li>
+  <li> SVG is XML, all elements need closed </li>
+  <li> To style shapes use CSS </li>
   <li>
     Use fill-rule style with:
-    * **even**,
-    * **odd** or
-    * **nonzero**
+    <ul>
+      <li>even</li>
+      <li>odd</li>
+      <li>nonzero</li>
+    </ul>
   </li>
-  * All path commands can be expressed with either *lowercase* or *uppercase* with purpose
-  * *lowercase* specifies *relative* positioning
-  * *uppercase* specifies *absolute* positioning
+  <li>
+    All path commands can be expressed with different letter cases with a purpose of
+    <ul>
+      <li>lowercase specifing relative positioning</li>
+      <li>uppercase specifies absolute positioning</li>
+    </ul>
+  </li>
+</ul>
 
 <h3>Predefined Shapes</h3>
 <table>
-  <tr>
+  <thead>
     <th>Name</th>
     <th>Tag</th>
     <th>Specific Attributes</th>
-  </tr>
+  </thead>
   <tr>
     <td>Rectangle</td>
     <td>&#60;rect&#62;</td>
     <td>
-      **width:** horizontal length
-      **height:** vertical length
+      <ul>
+        <li> width: horizontal length </li>
+        <li> height: vertical length </li>
+      </ul>
     </td>
   </tr>
   <tr>
     <td>Circle</td>
     <td>&#60;circle&#62;</td>
     <td>
-      **cx:** center x
-      **cy:** center y
-      **r:** radius
+      <ul>
+        <li> cx: center x </li>
+        <li> cy: center y </li>
+        <li> r: radius </li>
+      </ul>
     </td>
   </tr>
   <tr>
     <td>Ellipse</td>
     <td>&#60;ellipse&#62;</td>
-    <td>Extends Circle with
-      **rx:** horizontal radius
-      **ry:** vertical radius
+    <td>
+      Extends Circle with
+      <ul>
+        <li> rx: horizontal radius </li>
+        <li> ry: vertical radius </li>
+      </ul>
     </td>
   </tr>
   <tr>
     <td>Line</td>
     <td>&#60;line&#62;</td>
     <td>
-      **x1:** horizontal start position
-      **y1:** vertical start position
-      **x2:** horizontal end position
-      **y2:** vertical end position
+      <ul>
+        <li> x1: horizontal start position </li>
+        <li> y1: vertical start position </li>
+        <li> x2: horizontal end position </li>
+        <li> y2: vertical end position </li>
+      </ul>
     </td>
   </tr>
   <tr>
     <td>Polyline</td>
     <td>&#60;polyline&#62;</td>
     <td>
-      **points:** A space separated list of x,y coordinates
+      <ul>
+        <li> points: A space separated list of x,y coordinates </li>
+      </ul>
     </td>
   </tr>
   <tr>
@@ -109,46 +105,135 @@ SVG integrates with standards such as the DOM and XSL.
     <td>Path</td>
     <td>&#60;path&#62;</td>
     <td>
-      **M:** moveto
-      **L:** lineto
-      **H:** horizontal lineto
-      **V:** vertical lineto
-      **C:** curveto
-      **S:** smooth curveto
-      **Q:** quadratic Bézier curve
-      **T:** smooth quadratic Bézier curveto
-      **A:** elliptical Arc
-      **Z:** closepath
+      <ul>
+        <li> M: moveto </li>
+        <li> L: lineto </li>
+        <li> H: horizontal lineto </li>
+        <li> V: vertical lineto </li>
+        <li> C: curveto </li>
+        <li> S: smooth curveto </li>
+        <li> Q: quadratic Bézier curve </li>
+        <li> T: smooth quadratic Bézier curveto </li>
+        <li> A: elliptical Arc </li>
+        <li> Z: closepath </li>
+      </ul>
     </td>
   </tr>
   <tr>
     <td>Text</td>
     <td>&#60;text&#62;</td>
     <td>
-      **x:** horizontal start position
-      **y:** vertical start position
-      **&#60;tspan&#60;:** a sub element for grouping lines of text
+      <ul>
+        <li> x: horizontal start position </li>
+        <li> y: vertical start position </li>
+        <li> &#60;tspan&#62;: child which groups lines </li>
+      </ul>
     </td>
   </tr>
 </table>
 
 # Filters
-  * **&lt;feBlend&gt;:** filter for combining images
-  * **&lt;feColorMatrix&gt;:** filter for color transforms
-  * **&lt;feComponentTransfer&gt;:**
-  * **&lt;feComposite&gt;:**
-  * **&lt;feConvolveMatrix&gt;:**
-  * **&lt;feDiffuseLighting&gt;:**
-  * **&lt;feDisplacementMap&gt;:**
-  * **&lt;feFlood&gt;:**
-  * **&lt;feGaussianBlur&gt;:**
-  * **&lt;feImage&gt;:**
-  * **&lt;feMerge&gt;:**
-  * **&lt;feMorphology&gt;:**
-  * **&lt;feOffset&gt;:** filter for drop shadows
-  * **&lt;feSpecularLighting&gt;:**
-  * **&lt;feTile&gt;:**
-  * **&lt;feTurbulence&gt;:**
-  * **&lt;feDistantLight&gt;:** filter for lighting
-  * **&lt;fePointLight&gt;:** filter for lighting
-  * **&lt;feSpotLight&gt;:** filter for lighting
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Tag</th>
+    <th>Use</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Blend</td>
+      <td>&lt;feBlend&gt;</td>
+      <td>filter for combining images</td>
+    </tr>
+    <tr>
+      <td>ColorMatrix</td>
+      <td>&lt;feColorMatrix&gt;</td>
+      <td>filter for color transforms</td>
+    </tr>
+    <tr>
+      <td>ComponentTransfer</td>
+      <td>&lt;feComponentTransfer&gt;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Composite</td>
+      <td>&lt;feComposite&gt;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ConvolveMatrix</td>
+      <td>&lt;feConvolveMatrix&gt;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DiffuseLighting</td>
+      <td>&lt;feDiffuseLighting&gt;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DisplacementMap</td>
+      <td>&lt;feDisplacementMap&gt;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flood</td>
+      <td>&lt;feFlood&gt;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GaussianBlur</td>
+      <td>&lt;feGaussianBlur&gt;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Image</td>
+      <td>&lt;feImage&gt;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Merge</td>
+      <td>&lt;feMerge&gt;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Morphology</td>
+      <td>&lt;feMorphology&gt;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Offset</td>
+      <td>&lt;feOffset&gt;</td>
+      <td>filter for drop shadows</td>
+    </tr>
+    <tr>
+      <td>SpecularLighting</td>
+      <td>&lt;feSpecularLighting&gt;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tile</td>
+      <td>&lt;feTile&gt;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Turbulence</td>
+      <td>&lt;feTurbulence&gt;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DistantLight</td>
+      <td>&lt;feDistantLight&gt;</td>
+      <td>filter for lighting</td>
+    </tr>
+    <tr>
+      <td>PointLight</td>
+      <td>&lt;fePointLight&gt;</td>
+      <td>filter for lighting</td>
+    </tr>
+    <tr>
+      <td>SpotLight</td>
+      <td>&lt;feSpotLight&gt;</td>
+      <td>filter for lighting</td>
+    </tr>
+  </tbody>
+</table>
